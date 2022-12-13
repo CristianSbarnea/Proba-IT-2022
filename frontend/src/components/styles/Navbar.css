@@ -13,92 +13,99 @@
     --secondarytextColor: #252F65;
 }
 
-header {
+.navbar {
     display: flex;
-    width: 100vw;
-    top: 0;
-    left: 0;
-    right: 0;
-    justify-content: flex-end;
-    height: 80px;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 2rem;
-    background-color: white;
-    color: var(--mainTextColor);
-}
-
-.account-btn {
-    border: none;
-    outline: none;
-    margin: 0 1.5rem;
+    justify-content: space-between;
+    align-items: center;
     background-color: var(--mainColor);
     color: var(--mainTextColor);
+}
+
+.logo-name {
+    margin: 1rem;
+    margin-left: 1.5rem;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-button {
+    text-decoration: none;
+    color: var(--mainTextColor);
+    border: 0px;
+    outline: 0px;
+    background-color: var(--mainColor);
+    margin-top: 1.5rem;
+    margin-right: 4rem;
+    cursor: pointer;
+    display: block;
     font-size: 1rem;
-    cursor: pointer;
 }
 
-.account-btn:hover {
-    color: var(--secondaryColor);
+.toggle-button {
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
 }
 
-header .nav-btn {
-    padding-right: 0px;
-    cursor: pointer;
-    background: transparent;
-    border: none;
-    outline: none;
-    color: var(--textColor);
-    visibility: hidden;
-    opacity: 0;
-    font-size: 1.8rem;
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: var(--tertiaryColor);
+    border-radius: 10px;
 }
 
-@media only screen and (max-width: 1024px) {
-    header .nav-btn {
-        padding: 10px;
-        visibility: visible;
-        opacity: 1;
-    }
-
-    .nav-open-btn {
-        width: 1rem;
-        margin-right: 2rem;
-    }
-
-    header nav{
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 100vh;
-        width: 100vw;
-        padding-right: 2rem;
+@media (max-width: 768px) {
+    .toggle-button {
         display: flex;
+        margin-top: 1.3rem;
+        margin-right: 1.3rem;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        width: 100%;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        gap: 1.5rem;
-        background-color: var(--mainColor);
-        transition: 1s;
-        transform: translateY(-100vh);
+        background-color: var(--secondaryColor);
     }
 
-    header .responsive_nav {
-        transform: none;
+    .navbar-links li {
+        text-align: center;
+        
     }
 
-    nav .nav-close-btn {
-        position: absolute;
-        top: 2rem;
-        right: 2rem;
+    .navbar-links li button {
+        background-color: var(--secondaryColor);
+        color: var(--mainColor);
+        font-size: 0.8rem;
+        margin: 0.8rem 1rem;
     }
 
-    nav a{
-        font-size: 1.5rem;
+    .navbar-links.active {
+        display: flex;
     }
-
-    .account-btn {
-        font-size: 1.5rem;
-    }
-
 }
+
+

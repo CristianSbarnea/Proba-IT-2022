@@ -11,7 +11,7 @@
     position: relative;
     display: flex;
     width: 100vw;
-    height: 500px;
+    height: 600px;
     background-color: var(--secondaryColor);
     align-items: center;
     justify-content: center; 
@@ -43,13 +43,15 @@
     margin-bottom: 0.8rem;
     font-family: Merriweather;
     color: var(--secondarytextColor);
-    font-size: 2.2rem;
+    font-size: 2.5rem;
+    text-align: center;
 }
 
 .formDescription p {
     font-family: Merriweather;
     color: var(--secondarytextColor);
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    text-align: center;
     margin-bottom: 5rem;
 }
 
@@ -73,7 +75,6 @@
 }
 
 .input-form-style {
-    text-align: center;
     width: 70%;
 }
 
@@ -109,7 +110,7 @@
         margin-bottom: 0.8rem;
         font-family: Merriweather;
         color: var(--secondarytextColor);
-        font-size: 1.8rem;
+        font-size: 2rem;
         text-align: center;
 
     }
@@ -117,7 +118,7 @@
     .formDescription p {
         font-family: Merriweather;
         color: var(--secondarytextColor);
-        font-size: 0.9rem;
+        font-size: 1rem;
         text-align: center;
         margin: 0px;
     }
@@ -134,5 +135,6 @@
         justify-content: center;
         align-items: center;
         margin: 0px;
+        margin-left: 5.5rem;
     }
 }

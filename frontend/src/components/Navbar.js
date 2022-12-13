@@ -1,30 +1,43 @@
-import { useRef } from "react";
+import { useRef, useState} from "react";
 import logo from '../assets/logo.png';
 import { FaBars, FaTimes } from "react-icons/fa";
+
 import './styles/Navbar.css'
 
 function Navbar() {
 
-    const navRef = useRef();
-    
-    const showNavbar = () => {
-        navRef.current.classList.toggle("responsive_nav");
+    const [isActive, setActive] = useState(false);
+
+    const [isShown, setIsShown] = useState(false);
+
+    const open = (e) => {
+        e.preventDefault();
+        console.log("HELOOOO");
+        setActive(!isActive);
     }
 
     return <>
-        <header>
-            <img classname="navbar-logo"src={logo} alt="logo"></img>
-            <nav ref = {navRef}>
-            <button className="nav-btn nav-close-btn" onClick={showNavbar}>
-                    <FaTimes />
-            </button>
-            <button className="account-btn login-btn">Logare</button>
-            <button className="account-btn create-account-btn">Creare cont</button>
-            </nav>
-            <button className="nav-btn nav-open-btn" onClick={showNavbar}>
-                    <FaBars />
-            </button>
-        </header>
+        <nav className="navbar">
+            <div className="logo-name">
+                <img src={logo}></img>
+            </div>
+            <a href="" className="toggle-button" onClick={open}>
+                <span className="bar"></span>
+                <span className="bar"></span>
+                <span className="bar"></span>
+            </a>
+            <div className={"navbar-links" + (isActive ? " active" : "")}>
+                <ul>
+                    <li>
+                        <button className="navbar-button">Logare</button>
+                    </li>
+                    <li>
+                        <button className="navbar-button">Creaza Cont</button>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
     
     </>
 }

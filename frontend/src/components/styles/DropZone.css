@@ -9,8 +9,9 @@
 .text-center {
     text-align: center;
     padding: 1.5rem;
-    border: 2.5px var(--secondarytextColor) dashed;
+    border: 1px var(--secondarytextColor) solid;
     width: 70%;   
     font-size: 1rem; 
     border-radius: 5px;
+    margin-top: 0.5rem;
 }

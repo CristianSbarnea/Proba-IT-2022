@@ -3,7 +3,7 @@ import DropZone from './DropZone'
 
 export default function Form() {
     return <>
-        <div className="mainFormSection">
+        <div id="upload-a-meme" className="mainFormSection">
             <div className='formSection'>
                 <div className='formDescription'>
                     <h1>

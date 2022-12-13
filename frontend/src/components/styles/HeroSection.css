@@ -8,8 +8,8 @@
 
 .heroSection {
     width: 75vw;
-    height: 500px;
-    margin-top: 70px;
+    height: 600px;
+    margin-top: 40px;
     margin-left: 10vw;
     margin-right: 20vw;
     padding: 0;
@@ -62,9 +62,11 @@
 }
 
 .heroSection_box_right {
+    position: relative;
     display: flex;
     order: 2;
     flex:1;
+    align-items: center;
     justify-content: center;
     padding-left: 0;
     margin-left: 0;
@@ -77,7 +79,7 @@
     margin: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 950px) {
     .mainTextHeroSection {
         font-size: 2.2rem;
         text-align: center;
@@ -94,28 +96,21 @@
         padding-left: 2rem;
     }
 
+    .heroSection {
+        margin-bottom: 10rem;
+        height: 650px;
+        margin-top: 30px;
+    }
+
 }
 
 @media screen and (max-width: 480px) {
-    .heroSection {
-        margin-top: 40px;
-    }
-
-    .subparagraphHeroSection {
-        padding-bottom: 1rem;
-        font-size: 1.1rem;
-        text-align: center;
-    }
-
+    
     .mainTextHeroSection {
         font-size: 2.1rem;
         text-align: center;
     }
 
-    .submainTextHeroSection {
-        font-size: 2.1rem;
-        text-align: center;
-    }
 
     .paragraphHeroSection {
         font-size: 1.1rem;
@@ -125,6 +120,16 @@
     .whysosalty {
         width: 26rem;
         padding-left: 2rem;
+        margin-bottom: 10rem;
+    }
+
+    .heroSection {
+        margin-bottom: 20rem;
+        height: 650px;
+    }
+
+    .heroSection_box_right {
+        margin-bottom: 10rem;
     }
 
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import './styles/HeroSection.css'
 import whysosalty from '../assets/whysosalty.png'
+import Form from "./Form";
 
 export default function HeroSection() {
     return <>
@@ -15,7 +16,7 @@ export default function HeroSection() {
                         Platforma ideală pentru studenții de la Politehnică,<br></br>
                         amuzați de câte materii o să pice semestrul asta.
                     </p>
-                    <button className="btn-hero-section">
+                    <button className="btn-hero-section" onClick = { () => document.getElementById("upload-a-meme").scrollIntoView()}>
                         Upload a MEME
                     </button>
                 </div>

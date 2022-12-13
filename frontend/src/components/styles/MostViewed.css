@@ -8,12 +8,70 @@
 
 .mostViewed {
     width: 100vw;
-    height: 500px;
+    height: 450px;
     background-color: var(--mainColor);
-    margin-top: 500px;
-    margin-bottom: 80px;
 }
 
 .main-text-MostViewed {
-    margin-top: 1rem;
+    margin-top: 1.3rem;
+    margin-left: 1.3rem;
+}
+
+.MostViewed_box{
+    display: flex;
+    flex-direction: column;
+}
+
+.MostViewed_box_text {
+    display: flex;
+    flex-direction: row;
+    flex:1;
+    order:1;
+}
+
+.MostViewed_box_photos {
+    display: flex;
+    flex:1;
+    order:2;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.meme-img {
+    margin-top: 3rem;
+    width: 18rem;
+    height: auto;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .mostViewed {
+        height: 900px;
+    }
+
+    .meme-img {
+        margin-top: 3rem;
+        width: 15rem;
+        height: auto;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    .main-text-MostViewed {
+        margin-top: 1.3rem;
+        margin-left: 1.3rem;
+        text-align: center;
+        margin-right: 1.3rem;
+    }
+
+    .MostViewed_box_text {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .MostViewed_box_photos {
+        flex-direction: column;
+    }
 }
