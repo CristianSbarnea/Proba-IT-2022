@@ -1,0 +1,19 @@
+:root {
+    --mainColor: white;
+    --secondaryColor: #6F3096;
+    --tertiaryColor: #06114F;
+    --mainTextColor: #06114F;
+    --secondarytextColor: #252F65;
+}
+
+.mostViewed {
+    width: 100vw;
+    height: 500px;
+    background-color: var(--mainColor);
+    margin-top: 500px;
+    margin-bottom: 80px;
+}
+
+.main-text-MostViewed {
+    margin-top: 1rem;
+}

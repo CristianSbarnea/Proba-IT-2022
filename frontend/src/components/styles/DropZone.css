@@ -1,0 +1,16 @@
+:root {
+    --mainColor: white;
+    --secondaryColor: #6F3096;
+    --tertiaryColor: #06114F;
+    --mainTextColor: #06114F;
+    --secondarytextColor: #252F65;
+}
+
+.text-center {
+    text-align: center;
+    padding: 1.5rem;
+    border: 2.5px var(--secondarytextColor) dashed;
+    width: 70%;   
+    font-size: 1rem; 
+    border-radius: 5px;
+}

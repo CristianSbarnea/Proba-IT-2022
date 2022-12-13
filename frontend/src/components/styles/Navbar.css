@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Merriweather, sans-serif;
+}
+
+:root {
+    --mainColor: white;
+    --secondaryColor: #6F3096;
+    --tertiaryColor: #06114F;
+    --mainTextColor: #06114F;
+    --secondarytextColor: #252F65;
+}
+
+header {
+    display: flex;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: flex-end;
+    height: 80px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    background-color: white;
+    color: var(--mainTextColor);
+}
+
+.account-btn {
+    border: none;
+    outline: none;
+    margin: 0 1.5rem;
+    background-color: var(--mainColor);
+    color: var(--mainTextColor);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.account-btn:hover {
+    color: var(--secondaryColor);
+}
+
+header .nav-btn {
+    padding-right: 0px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--textColor);
+    visibility: hidden;
+    opacity: 0;
+    font-size: 1.8rem;
+}
+
+@media only screen and (max-width: 1024px) {
+    header .nav-btn {
+        padding: 10px;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .nav-open-btn {
+        width: 1rem;
+        margin-right: 2rem;
+    }
+
+    header nav{
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100vh;
+        width: 100vw;
+        padding-right: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        background-color: var(--mainColor);
+        transition: 1s;
+        transform: translateY(-100vh);
+    }
+
+    header .responsive_nav {
+        transform: none;
+    }
+
+    nav .nav-close-btn {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
+
+    nav a{
+        font-size: 1.5rem;
+    }
+
+    .account-btn {
+        font-size: 1.5rem;
+    }
+
+}

@@ -1,0 +1,130 @@
+:root {
+    --mainColor: white;
+    --secondaryColor: #6F3096;
+    --tertiaryColor: #06114F;
+    --mainTextColor: #06114F;
+    --secondarytextColor: #252F65;
+}
+
+.heroSection {
+    width: 75vw;
+    height: 500px;
+    margin-top: 70px;
+    margin-left: 10vw;
+    margin-right: 20vw;
+    padding: 0;
+    position: relative;
+}
+
+.heroSection_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.heroSection_box_left {
+    flex: 2;
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5vw;
+}
+
+.mainTextHeroSection {
+    color: var(--secondarytextColor);
+    font-size: 2.6rem;
+    font-family: Merriweather;
+    text-align: center;
+    margin-bottom: 1.2rem;
+}
+
+.paragraphHeroSection {
+    color: var(--secondarytextColor);
+    font-size: 1.3rem;
+    font-family: Merriweather;
+    text-align: center;
+    margin-bottom: 1.2rem;
+}
+
+.btn-hero-section {
+    background-color: var(--secondaryColor);
+    border: none;
+    outline: none;
+    padding: 15px 35px;
+    color: var(--mainColor);
+    font-family: Merriweather;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-bottom: 3vh;
+}
+
+.heroSection_box_right {
+    display: flex;
+    order: 2;
+    flex:1;
+    justify-content: center;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.whysosalty{
+    width: 30rem;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .mainTextHeroSection {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    .paragraphHeroSection {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .whysosalty {
+        width: 30rem;
+        align-items: center;
+        padding-left: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .heroSection {
+        margin-top: 40px;
+    }
+
+    .subparagraphHeroSection {
+        padding-bottom: 1rem;
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .mainTextHeroSection {
+        font-size: 2.1rem;
+        text-align: center;
+    }
+
+    .submainTextHeroSection {
+        font-size: 2.1rem;
+        text-align: center;
+    }
+
+    .paragraphHeroSection {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .whysosalty {
+        width: 26rem;
+        padding-left: 2rem;
+    }
+
+}
