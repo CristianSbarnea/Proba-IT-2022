@@ -38,6 +38,7 @@
     font-family: Merriweather;
     text-align: center;
     margin-bottom: 1.2rem;
+    font-weight: 900;
 }
 
 .paragraphHeroSection {
@@ -46,19 +47,21 @@
     font-family: Merriweather;
     text-align: center;
     margin-bottom: 1.2rem;
+    font-weight: 300;
 }
 
 .btn-hero-section {
     background-color: var(--secondaryColor);
     border: none;
     outline: none;
-    padding: 15px 35px;
+    padding: 15px 50px;
     color: var(--mainColor);
     font-family: Merriweather;
     border-radius: 5px;
     font-size: 1.2rem;
     cursor: pointer;
     margin-bottom: 3vh;
+    font-weight: 600;
 }
 
 .heroSection_box_right {

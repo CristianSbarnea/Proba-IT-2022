@@ -22,7 +22,8 @@
 }
 
 .logo-name {
-    margin: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.3rem;
     margin-left: 1.5rem;
 }
 
@@ -47,6 +48,7 @@
     cursor: pointer;
     display: block;
     font-size: 1rem;
+    font-weight: 300;
 }
 
 .toggle-button {
@@ -80,7 +82,8 @@
     }
 
     .navbar {
-        flex-direction: column;
+        display: flex;
+        flex-direction: row;
         align-items: flex-start;
     }
 

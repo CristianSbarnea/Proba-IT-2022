@@ -15,3 +15,8 @@
     border-radius: 5px;
     margin-top: 0.5rem;
 }
+
+.dropzone-content {
+    font-family: Merriweather;
+    color: var(--mainTextColor)
+}

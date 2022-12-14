@@ -1,0 +1,95 @@
+:root {
+    --mainColor: white;
+    --secondaryColor: #6F3096;
+    --tertiaryColor: #06114F;
+    --mainTextColor: #06114F;
+    --secondarytextColor: #252F65;
+}
+
+.logo-modal {
+    margin-top: 0.6rem;
+}
+
+.modal-login-body {
+    height: 35rem;
+    background-color: var(--secondaryColor);
+    color: var(--secondaryColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-login-part {
+    width: 80%;
+    height: 76%;
+    background-color: var(--mainColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.text-modal {
+    font-family: Merriweather;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 550;
+}
+
+.text-modal-createacc {
+    font-family: Merriweather;
+    font-weight: 550;
+}
+
+.label-text-modal {
+    font-family: Merriweather;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    font-weight: 550;
+}
+
+.modal-createaccount-body {
+    height: 34rem;
+    background-color: var(--secondaryColor);
+    color: var(--secondaryColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-createaccount-part {
+    width: 80%;
+    height: 76%;
+    background-color: var(--mainColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.modal-btn {
+    outline: none;
+    border: 0px;
+    background-color: #6F3096;
+    color: var(--mainColor);
+    margin-top: 2.5rem;
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+
+.modal-input {
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.modal-btn-login {
+    margin-top: 3rem;
+}
+
+.modal-input-login {
+    font-size: 1.1rem;
+    border-radius: 5px;
+}

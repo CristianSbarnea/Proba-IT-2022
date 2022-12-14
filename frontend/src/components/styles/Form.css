@@ -11,7 +11,7 @@
     position: relative;
     display: flex;
     width: 100vw;
-    height: 600px;
+    height: 650px;
     background-color: var(--secondaryColor);
     align-items: center;
     justify-content: center; 
@@ -45,6 +45,7 @@
     color: var(--secondarytextColor);
     font-size: 2.5rem;
     text-align: center;
+    font-weight: 700;
 }
 
 .formDescription p {
@@ -53,6 +54,7 @@
     font-size: 1.2rem;
     text-align: center;
     margin-bottom: 5rem;
+    font-weight: 300;
 }
 
 .label-form {
@@ -88,7 +90,8 @@
     font-family: Merriweather !important;
     color: var(--maintextColor) !important;
     font-size: 1.1rem !important;
-    margin-bottom: 0.5rem !important;
+    margin-bottom: 0.3rem !important;
+    font-weight: 700;
 }
 
 .send-form-btn {

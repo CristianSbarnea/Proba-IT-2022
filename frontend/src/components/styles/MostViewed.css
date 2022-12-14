@@ -15,6 +15,9 @@
 .main-text-MostViewed {
     margin-top: 1.3rem;
     margin-left: 1.3rem;
+    font-weight: 700;
+    color: var(--mainTextColor);
+    font-family: Merriweather;
 }
 
 .MostViewed_box{

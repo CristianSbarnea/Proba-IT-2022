@@ -17,8 +17,8 @@ export default function Form() {
                 <div className='formComplete'>
                     <form>
                         <label className='label-form-text'>
-                            Descriere<br></br>
-                        </label>
+                            Descriere
+                        </label><br></br>
                         <input className="input-form-btn input-form-style" type="text" name="name" /> <br></br>
                         
                         <label className='label-form-text'>

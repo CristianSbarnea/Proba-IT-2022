@@ -22,8 +22,7 @@
 }
 
 .footer-img {
-    
-
+    margin-top: 1rem;
 }
 
 .facebook-img {
@@ -35,6 +34,10 @@
     padding-left: 1rem;
 }
 
+.twitch-img {
+    margin-top: 1.06rem;
+}
+
 @media screen and (max-width: 768px) {
     .footer {
         bottom: 0;
@@ -42,13 +45,17 @@
         right: 0;
         width: 100vw;
         background-color: var(--tertiaryColor);
-        height: 50px;
+        height: 70px;
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
         color: var(--mainColor);
         font-size: 0.8rem;
+    }
+
+    .footer-img {
+        margin-top: 1rem;
     }
 
     .facebook-img {
@@ -63,7 +70,7 @@
     }
 
     .twitch-img {
-        margin-top: 0.06rem;
+        margin-top: 1.06rem;
         width: 7%;
         height: auto;
     }
