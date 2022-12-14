@@ -8,10 +8,12 @@
 
 .logo-modal {
     margin-top: 0.6rem;
+    width: 10rem;
+    height: auto;
 }
 
 .modal-login-body {
-    height: 35rem;
+    height: 30rem;
     background-color: var(--secondaryColor);
     color: var(--secondaryColor);
     display: flex;

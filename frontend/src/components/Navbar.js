@@ -26,7 +26,7 @@ function Navbar() {
     return <>
         <nav className="navbar">
             <div className="logo-name">
-                <img src={logo}></img>
+                <a href=""><img className="Navbar-logo-img"src={logo}></img></a>
             </div>
             <a href="" className="toggle-button" onClick={open}>
                 <span className="bar"></span>

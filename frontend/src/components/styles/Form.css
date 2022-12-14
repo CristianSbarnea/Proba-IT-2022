@@ -141,3 +141,42 @@
         margin-left: 5.5rem;
     }
 }
+
+@media screen and (max-width: 480px) {
+    .formDescription h1 {
+        margin-top: 0.8rem;
+        margin-bottom: 0.8rem;
+        font-family: Merriweather;
+        color: var(--secondarytextColor);
+        font-size: 2rem;
+        text-align: center;
+
+    }
+    
+    .formDescription p {
+        font-family: Merriweather;
+        color: var(--secondarytextColor);
+        font-size: 1rem;
+        text-align: center;
+        margin: 0px;
+    }
+
+    .formDescription {
+        margin-right: 2.5rem;
+    }
+
+    .formComplete {
+        flex:1;
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        margin-left: 5.5rem;
+    }
+
+    .mainFormSection {
+        height: 900px;
+    }
+}
