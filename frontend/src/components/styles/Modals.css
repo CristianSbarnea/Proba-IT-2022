@@ -45,7 +45,7 @@
 .label-text-modal {
     font-family: Merriweather;
     font-size: 1.1rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.2rem;
     margin-top: 0.5rem;
     font-weight: 550;
 }
@@ -83,6 +83,7 @@
 .modal-input {
     font-size: 1rem;
     border-radius: 5px;
+    border: 1px solid;
 }
 
 .modal-btn-login {
@@ -90,6 +91,7 @@
 }
 
 .modal-input-login {
+    border: 1px solid;
     font-size: 1.1rem;
     border-radius: 5px;
 }

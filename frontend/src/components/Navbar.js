@@ -1,10 +1,8 @@
-import { useRef, useState} from "react";
+import {useState} from "react";
 import logo from '../assets/logo.png';
 import './styles/Navbar.css'
-import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import './styles/Modals.css'
-
 
 function Navbar() {
 
